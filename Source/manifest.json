@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Pork to Dork",
+	"version": "1.0",
+	"description": "Replaces the text 'Pork' with 'Dork'.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
